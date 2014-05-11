@@ -60,6 +60,9 @@ get '/' do
     end
   end
   @products = Item.all
+  #Source: Fritz Masiglat
+  #Date: May 7, 2014
+  #Name of Programmer: Fritz Masiglat
   @random_products = @products.sample(10)
   erb :banner
 end
