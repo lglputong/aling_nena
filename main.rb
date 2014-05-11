@@ -68,7 +68,7 @@ get '/products' do
   @products = Item.all
   @products.each do |product|
   if product.quantity.to_i <= 0
-    product.destroy!
+    products.destroy!
     end
   end
   @products = Item.all
